@@ -3,6 +3,10 @@
     <header>
       <h1>Todo List</h1>
     </header>
+    <form>
+      <label>Email</label>
+      <input type="email" placeholder="Enter your email" />
+    </form>
     <ul>
       <Task
         v-for="task in getTasks()"
