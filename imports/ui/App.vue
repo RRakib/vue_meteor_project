@@ -4,23 +4,32 @@
       <h1>Todo List</h1>
     </header>
     <form>
-      <label>Email</label>
-      <input type="email" placeholder="Enter your email" />
+      <div>
+        <label>Student Name</label>
+        <p>
+          <input type="text" placeholder="Enter student name" />
+        </p>
+      </div>
+      <div>
+        <label>Student Email</label>
+        <p>
+          <input type="email" placeholder="Enter student email" />
+        </p>
+      </div>
+      <div>
+        <label>Student Phone</label>
+        <p>
+          <input type="email" placeholder="Enter student phone" />
+        </p>
+      </div>
     </form>
-    <ul>
-      <Task
-        v-for="task in getTasks()"
-        v-bind:key="task._id"
-        v-bind:task="task"
-      />
-    </ul>
   </div>
 </template>
- 
+
 <script>
 import Vue from "vue";
 import Task from "./Task.vue";
- 
+
 export default {
   components: {
     Task
