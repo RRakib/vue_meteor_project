@@ -22,6 +22,9 @@
           <input type="email" placeholder="Enter student phone" />
         </p>
       </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
     </form>
   </div>
 </template>
